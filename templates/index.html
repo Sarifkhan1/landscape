@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Living Landscapes</title>
+    <style>
+      body {
+        font-family: Arial;
+        text-align: center;
+        padding: 50px;
+        background: #f7f7f7;
+      }
+      form {
+        margin-bottom: 30px;
+      }
+      input[type="text"] {
+        padding: 10px;
+        width: 300px;
+        font-size: 16px;
+      }
+      input[type="submit"] {
+        padding: 10px 20px;
+        font-size: 16px;
+      }
+      img {
+        max-width: 512px;
+        margin-top: 20px;
+        border: 2px solid #ccc;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Describe Your Landscape</h1>
+    <form method="POST">
+      <input
+        type="text"
+        name="prompt"
+        placeholder="Describe your image..."
+        required
+      />
+      <input type="submit" value="Generate" />
+    </form>
+
+    {% if image_filename %}
+    <h2>Generated Image:</h2>
+    <img
+      src="{{ url_for('serve_image', filename=image_filename) }}"
+      alt="Generated image"
+    />
+    {% endif %}
+  </body>
+</html>
