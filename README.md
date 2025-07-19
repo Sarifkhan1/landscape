@@ -11,7 +11,6 @@
 
 **Living Landscapes** is a Flask-based web application that uses the **Stable Diffusion** model to generate AI-powered images based on natural language prompts. Users simply describe a scene, and the app generates a unique landscape image that visually represents the prompt.
 
----
 
 ## 🚀 Features
 
@@ -21,14 +20,12 @@
 - Clean and simple web interface
 - Images saved dynamically with unique filenames
 
----
 
 ## 📷 Demo
 
 You can view the full demo video and image samples in this shared folder:  
 🔗 https://drive.google.com/file/d/1X8QCraK_m1yS7XPm_ReRFNxwbMElbcEp/view?usp=sharing
 
----
 
 ## 🛠️ Technologies Used
 
@@ -38,7 +35,6 @@ You can view the full demo video and image samples in this shared folder:
 - PyTorch (for model inference)
 - HTML + CSS (frontend)
 
----
 
 ## 📁 Project Structure
 
@@ -109,7 +105,6 @@ Then open your browser and visit:
 All images are saved in the `static/generated/` folder with unique filenames.
 The app is currently designed for **local use**. Deployment on a cloud platform like Heroku or Render would require GPU support and additional configuration.
 If you are running on CPU, generation might be slower.
-
 
 ## 📜 License
 
